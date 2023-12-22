@@ -1,0 +1,113 @@
+/*
+#011526 DARK BLUE
+#101C26 BLACK
+#213740 DARK GREEN
+#345259 NEUTRAL DARK GREEN
+#466E73 A LITTLE BIT MORE WHITE DARK GREEN (lol xD) 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #101C26;
+
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #011526;
+    height: 100vh;
+}
+header > h1{
+    position: absolute;
+    top: 100px;
+    font-size: 5rem;
+    color: white;
+    font-family: "Kaushan Script",cursive;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.269);
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 90vw;
+    font-size: 1.3rem;   
+}
+nav > ul > li > a{
+    border: 1px solid #345259;
+    padding: 3px 5px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+nav > ul > li >a:hover{
+    background: #345259 ;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+/*HEADER MEDIA QUERY*/
+@media screen and (width:800px) {
+    h1{
+        font-size: 3rem;
+        }
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    height: 100vh;
+    width: 900px;
+    background: #213740;
+    box-shadow: 2px 3px 13px 2px rgba(0, 0, 0, 0.245);
+    margin-bottom: 15px;
+}
+#projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#projetos img{
+    width:300px;
+}
+#projetos a{
+    grid-area: 2/1/2/2;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}   
+.container-info span h2{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.container{
+    background: #457f8d;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+#contato{
+    margin-bottom: 0px;
+}
+
